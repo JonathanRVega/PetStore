@@ -1,0 +1,60 @@
+.info-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 5%;
+    background-color: #2B7A78;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.info-text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color:#fff;
+    font-size: 3vh;
+}
+#nav-bar{
+    display: flex;
+    width: 100%;
+    height: 8vh;
+    margin-top: -2.5vh;
+    background-color: #3AAFA9;
+    position: absolute;
+}
+.nav-ul {
+    margin: 0vh;
+    padding: 1vh 0vh 1vh 1vh;
+  }
+  .nav-image{
+      padding-right: 1vh;
+  }
+.nav-link {
+    display: inline;
+    margin-right: 4vh;
+    font-size: 1.2em;
+  }
+  .a-nav-link{
+      color: #fff;
+      text-decoration: none;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-shadow: 1px 1px #000;
+  }
+  .a-nav-link:hover{
+    color: #000;
+    text-decoration: none;
+}
+
+.main-image{
+    background: url('img/dogos.jpg') no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#main-image{
+    width: 105%;
+    margin-left: -8px;
+    margin-top: 13vh;
+}
