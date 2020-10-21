@@ -10,8 +10,14 @@
  h1 {
 	 font-size: 2.2em;
 }
+.flipCards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
  .flip {
-	 position: relative;
+     position: relative;
 }
  .flip > .front, .flip > .back {
 	 display: block;
@@ -49,10 +55,9 @@
 }
  .flip {
 	 position: relative;
-	 display: inline-block;
-	 margin-right: 2px;
-	 margin-bottom: 1em;
-     width: 115rem;
+     margin-bottom: 1em;
+     margin-left: 1em;
+     width: 97%;
 }
  .flip > .front, .flip > .back {
 	 display: block;
@@ -67,7 +72,7 @@
 }
  .flip > .front p, .flip > .back p {
 	 font-size: 0.9125rem;
-	 line-height: 160%;
+	 line-height: 200%;
 	 color: #999;
 }
  .text-shadow {

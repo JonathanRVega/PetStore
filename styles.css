@@ -167,13 +167,13 @@ nav form button{
 nav form button:hover{
   background: #0755ff;
 }
-.cart-icon{
+nav .cart-icon{
   padding: 0 30px;
   color: #fff;
   font-size: 22px;
   cursor: pointer;
 }
-.cart-icon:hover{
+nav .cart-icon:hover{
 color: #222222;
 }
 
@@ -474,7 +474,7 @@ nav .logo.space{
       /* Here starts the CSS for the services */
       .wrapper-services{
         width: 100%;
-        height: 20vh;
+        height: 24vh;
         background-color: gainsboro;
         position: relative;
         
@@ -493,26 +493,74 @@ nav .logo.space{
       }
       .service-images{
           border-radius: 50%;
-          width: 100%;
-          margin-top: 2vh;
-          margin-left: 2vh;
+          width: 18vh;
+          margin-top: 1vh;
+          padding: 1vh;
           transition: transform .2s;
       }
+
       .service-images:hover{
-        transform: scale(1.03);
+        transform: scale(1.05);
       }
 
       div.service-text-wrapper{
         width: 7%;
-        margin-left: 2vh;
-        margin-right: 2vh;
+        margin-left: 2rem;
+        margin-right: 2rem;
       }
+
+      .text-Services{
+        text-align: center;
+      }
+      @media (max-width: 1200px) {
+        .service-images{
+          border-radius: 50%;
+          width: 18vh;
+          margin-top: 1vh;
+          margin-left: 2vh;
+          margin-right: 2vh;
+          transition: transform .2s;
+      }
+      .services-image-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+      }
+
+      @media (max-width: 660px) {
+        .wrapper-services{
+          width: 100%;
+          height: 60vh;
+          background-color: gainsboro;
+          position: relative;
+          
+        }
+        .service-images{
+          border-radius: 50%;
+          width: 18vh;
+          margin-top: 1vh;
+          margin-left: 2vh;
+          margin-right: 2vh;
+          transition: transform .2s;
+      }
+      .services-image-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .text-Services{
+      text-align: center;
+      display: none;
+    }
+      }
+
       /* Here ends the CSS for the services */
 
       /* Here starts the CSS for the footer */
       .footer-bar{
       width: 100%;
-      height: 20vh;
+      height: 10rem;
       margin-top: 10px;
       background-color: #FF7007;
     }
@@ -526,7 +574,20 @@ nav .logo.space{
       flex-direction: column;
     }
     .footer-text-heading{
-      margin-top: 2vh;
+      margin-top: 1vh;
+      font-size: 1rem;
+      color: #fff;
+      text-align: center;
+    }
+    .footer-bar-accesories{
+      width: 100%;
+      height: 17rem;
+      margin-top: 10px;
+      background-color: #FF7007;
+    }
+    .footer-text-heading-accesories{
+      margin-top: 1vh;
+      font-size: 1.7rem;
       color: #fff;
       text-align: center;
     }
