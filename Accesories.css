@@ -1,8 +1,4 @@
-*, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
+
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -10,11 +6,7 @@ html {
 body {
     height: fit-content;
 }
-@media (max-width: 60em) {
-    body {
-        padding: 3rem;
-   }
-}
+
 .Title{
     display: flex;
     justify-content: center;
@@ -67,8 +59,8 @@ body {
     color: #0d0d0d;
     margin-bottom: 1.5rem;
 }
-span{
-    color:  #FF7007;
+.text-Money{
+    color: #FF7007;
 }
 .card__text {
     font-size: 1.5rem;
@@ -101,3 +93,4 @@ span{
 .card__btn:hover span, .card__btn:active span {
     margin-left: 1.5rem;
 }
+
