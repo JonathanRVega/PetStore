@@ -23,6 +23,13 @@
     color:#fff;
     font-size: 3vh;
 }
+@media (max-width: 600px){
+  .info-text{
+    text-align: center;
+    color:#fff;
+    font-size: 2vh;
+}
+}
 
 /* Header image */
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i');
@@ -49,6 +56,23 @@ a{
   min-width:300px;
   color:#eee;
 }
+@media (max-width: 1000px){
+  .header{
+    height:50vw;
+    min-height:300px;
+    max-height:550px;
+    min-width:500px;
+  }
+}
+
+@media (max-width: 680px){
+  .header{
+    min-height:50px;
+    max-height:450px;
+    min-width:100%;
+  }
+}
+
 .header:after{
   content:"";
   width:100%;
@@ -591,6 +615,36 @@ nav .logo.space{
       color: #fff;
       text-align: center;
     }
+    @media (max-width: 1240px){
+      .footer-bar{
+        width: 100%;
+        height: fit-content;
+        margin-top: 10px;
+        background-color: #FF7007;
+      }
+      .footer-headings{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      
+    }
+    @media (max-width: 580px){
+      .footer-text-heading{
+        margin-top: 1vh;
+        font-size: 0.9rem;
+        color: #fff;
+        text-align: center;
+      }
+    }
+    @media (max-width: 420px){
+      .footer-text-heading{
+        margin-top: 1vh;
+        font-size: 0.8rem;
+        color: #fff;
+        text-align: center;
+      }
+    }
       /* Here ends the CSS for the footer */
 
       /* Adoptions CSS */
@@ -653,12 +707,17 @@ nav .logo.space{
        margin: 12px;
      }
      .gallery-text h3{
-         color: white;
-         display: inline-table;
-          vertical-align:middle;
-          line-height:100%;            
+       font-size: 2rem;
+        color: white;
+        display: inline-table;
+        vertical-align:middle;
+        line-height:100%;            
      }
-     .button {
+     .gallery-text p{
+      color: white;
+      text-align: justify;
+     }
+     .button-adoptions {
       min-width: 300px;
       min-height: 60px;
       font-family: 'Nunito', sans-serif;
@@ -668,10 +727,10 @@ nav .logo.space{
       font-weight: 700;
       color: #313133;
       background: #4FD1C5;
-    background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+    background: linear-gradient(90deg,#FF7007 0%, #FF7007 100%);
       border: none;
       border-radius: 1000px;
-      box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+      box-shadow: 12px 12px 24px #994102;
       transition: all 0.3s ease-in-out 0s;
       cursor: pointer;
       outline: none;
@@ -679,13 +738,13 @@ nav .logo.space{
       padding: 10px;
       }
     
-    button::before {
+    .button-adoptions::before {
     content: '';
       border-radius: 1000px;
       min-width: calc(300px + 12px);
       min-height: calc(60px + 12px);
-      border: 6px solid #00FFCB;
-      box-shadow: 0 0 60px rgba(0,255,203,.64);
+      border: 6px solid #CF7634;
+      box-shadow: 0 0 60px  #CF7634;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -694,20 +753,20 @@ nav .logo.space{
       transition: all .3s ease-in-out 0s;
     }
     
-    .button:hover, .button:focus {
+    .button-adoptions:hover, .button-adoptions:focus {
       color: #313133;
       transform: translateY(-6px);
     }
     
-    button:hover::before, button:focus::before {
+    .button-adoptions:hover::before, .button-adoptions:focus::before {
       opacity: 1;
     }
     
-    button::after {
+    .button-adoptions::after {
       content: '';
       width: 30px; height: 30px;
       border-radius: 100%;
-      border: 6px solid #00FFCB;
+      border: 6px solid  #CF7634;
       position: absolute;
       z-index: -1;
       top: 50%;
@@ -716,7 +775,7 @@ nav .logo.space{
       animation: ring 1.5s infinite;
     }
     
-    button:hover::after, button:focus::after {
+    .button-adoptions:hover::after, .button-adoptions:focus::after {
       animation: none;
       display: none;
     }
