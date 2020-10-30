@@ -6,7 +6,6 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
-
 .info-bar{
     display: flex;
     flex-direction: column;
@@ -690,12 +689,13 @@ nav .logo.space{
       .adoptionContainer{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
         width: 99%;
         margin: 10px;
       }
       .gallery {
-        width:33%;
+        width:30%;
         height:100%;
        margin: 10px;
        text-align: center;
@@ -832,5 +832,29 @@ nav .logo.space{
     }
 
     @media (max-width: 1200px){
-      
+
+    }
+
+    /* End of Adoptions CSS */
+
+    /* Shooping cart CSS */
+    .article-title{
+      font-size: 2rem;
+      text-align: center;
+      margin-top:  15px;
+    }
+    .article-price{
+      font-size: 1.5rem;
+    }
+    .article-description{
+      font-size: 1rem;
+      text-align: center;
+      width: 500px;
+      word-wrap: break-word;
+    }
+    .articles-wrapping{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     }
