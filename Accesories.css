@@ -1,5 +1,4 @@
-
-html {
+html{
     box-sizing: border-box;
     font-size: 62.5%;
 }
@@ -21,7 +20,7 @@ body {
 }
 .grid {
     display: grid;
-    width: 80%;
+    width: 100%;
     grid-gap: 6rem;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     align-items: start;
@@ -32,6 +31,7 @@ body {
    }
 }
 .grid__item {
+    width: 100%;
     background-color: #fff;
     border-radius: 0.4rem;
     overflow: hidden;
@@ -93,4 +93,3 @@ body {
 .card__btn:hover span, .card__btn:active span {
     margin-left: 1.5rem;
 }
-
