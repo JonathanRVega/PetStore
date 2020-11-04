@@ -3,7 +3,7 @@ html{
     font-size: 62.5%;
 }
 body {
-    height: fit-content;
+    height: fit-content !important;
 }
 
 .Title{
@@ -93,4 +93,18 @@ body {
 }
 .card__btn:hover span, .card__btn:active span {
     margin-left: 1.5rem;
+}
+
+@media (max-width: 1379px){
+    html{
+        box-sizing: border-box;
+        font-size: 45%;
+    }
+}
+
+@media (max-width: 1019px){
+    html{
+        box-sizing: border-box;
+        font-size: 62.5%;
+    }
 }
