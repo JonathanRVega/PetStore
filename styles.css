@@ -647,12 +647,20 @@ nav .logo.space{
     .footer-headings2{
       display: flex;
       flex-direction: column;
+      width: 22%;
     }
     .footer-text-heading{
       margin-top: 1vh;
-      font-size: 1rem !important;
+      font-size: 1em;
       color: #fff;
       text-align: center;
+      font-weight: bold;
+    }
+    .footer-text{
+      margin-top: 1vh;
+      font-size: 0.9em;
+      color: #fff;
+      text-align: justify;
     }
     .footer-bar-accesories{
       width: 100%;
@@ -663,9 +671,17 @@ nav .logo.space{
     }
     .footer-text-heading-accesories{
       margin-top: 1vh;
-      font-size: 1.7rem;
+      font-size: 1.7em;
       color: #fff;
       text-align: center;
+      font-weight: bold;
+    }
+    .footer-text-accesories{
+      margin-top: 1vh;
+      font-size: 14.5px;
+      color: #fff;
+      text-align: justify;
+      text-justify: inter-word;
     }
     @media (max-width: 1240px){
       .footer-bar{
@@ -673,13 +689,31 @@ nav .logo.space{
         height: fit-content;
         margin-top: 10px;
         background-color: #FF7007;
+
       }
       .footer-headings{
         display: flex;
         flex-direction: column;
         justify-content: center;
       }
-      
+      .footer-headings2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+      }
+      .footer-text{
+        margin-right: 7rem;
+        margin-left: 7rem;
+      }
+      .footer-text-heading-accesories{
+        font-size: 2em;
+      }
+      .footer-text-accesories{
+        font-size: 14px;
+        margin-right: 7rem;
+        margin-left: 7rem;
+      }
     }
     @media (max-width: 580px){
       .footer-text-heading{
@@ -688,6 +722,14 @@ nav .logo.space{
         color: #fff;
         text-align: center;
       }
+      .footer-text{
+        margin-right: 4rem;
+        margin-left: 4rem;
+      }
+      .footer-text-accesories{
+        margin-right: 4rem;
+        margin-left: 4rem;
+      }
     }
     @media (max-width: 420px){
       .footer-text-heading{
@@ -695,6 +737,14 @@ nav .logo.space{
         font-size: 0.8rem;
         color: #fff;
         text-align: center;
+      }
+      .footer-text{
+        margin-right: 3rem;
+        margin-left: 3rem;
+      }
+      .footer-text-accesories{
+        margin-right: 3rem;
+        margin-left: 3rem;
       }
     }
       /* Here ends the CSS for the footer */
@@ -893,13 +943,14 @@ nav .logo.space{
     }
     .article-title2{
       display: inline-block;
+      text-align: left;
       font-size: 2rem;
       font-weight: 400;
     }
     .article-price{
-      display: inline-block;
-      font-size: 1.5rem;
+      display: inline;
       text-align: right;
+      font-size: 1.5rem;
       margin: 10px;
     }
     .article-description{
