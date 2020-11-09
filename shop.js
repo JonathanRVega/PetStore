@@ -10,7 +10,7 @@ var shop = [
     },
     {
       image: './img/2.png',
-      title: 'Leash',
+      title: 'Dog Leash',
       price: 5.49,
       description : 'Leash for dogs, long lasting and the perfect length',
       amount: 5
@@ -38,7 +38,7 @@ var shop = [
     },
     {
       image: 'img/6.png',
-      title: 'Pet bed',
+      title: 'Pet bed (Small)',
       price: 19.99,
       description : 'Dont know what to say about this one, buy it please adsadsadkskadsk',
       amount: 5

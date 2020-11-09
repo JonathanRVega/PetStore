@@ -942,13 +942,13 @@ nav .logo.space{
       text-align: center;
     }
     .article-title2{
-      display: inline-block;
-      text-align: left;
       font-size: 2rem;
       font-weight: 400;
+      text-align: left;
+      margin-left: 15px;
+      margin-bottom: -45px;
     }
     .article-price{
-      display: inline;
       text-align: right;
       font-size: 1.5rem;
       margin: 10px;
@@ -967,11 +967,13 @@ nav .logo.space{
     justify-content: center;
     }
     .article-image{
+      
       display: block;
       margin-left: auto;
       margin-right: auto;
     }
     .border-test{
+      width: 525px;
       margin: 15px;
       box-shadow: 0 6px 4px 0 rgba(0,0,0,0.2);
       transition: 0.3s;
