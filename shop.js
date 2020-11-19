@@ -40,7 +40,7 @@ var shop = [
       image: 'img/6.png',
       title: 'Pet bed (Small)',
       price: 19.99,
-      description : 'Dont know what to say about this one, buy it please adsadsadkskadsk',
+      description : 'Dont know what to say about this one, buy it please',
       amount: 5
     },
     {
@@ -77,8 +77,9 @@ var shop = [
         var numItems = '<p style="text-align: right">x' + shop[i].amount + '</p></span>';
         var heading = '<h3 class="article-title2">' + shop[i].title + '</h3>';
         var headingPrice = '<h3 class="article-title2">' + shop[i].title + '</h3>' + '<p class="article-price"> $' + shop[i].price + '</p></span>';
-        var description = '<div class="article-description"><p>'+ shop[i].description + '</p><button type="button" class="btn btn-warning"> Buy Item</button></div></div>';
-        var concatThis = '<div class="border-test"'+ numItems + image + headingPrice + description + '</div>';
+        var description = '<div class="article-description"><p class="article-text">'+ shop[i].description + '</div>';
+        var button = '</p><button type="button" class="btn btn-warning button-shop"> Buy Item</button> </div>';
+        var concatThis = '<div class="border-test"'+ numItems + image + headingPrice + description+ button + '</div>';
         postHTML = postHTML + concatThis;
     }
     document.getElementById('market').innerHTML = postHTML

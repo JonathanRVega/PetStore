@@ -27,7 +27,7 @@
   .info-text{
     text-align: center;
     color:#fff;
-    font-size: 2vh;
+    font-size: 1.8vh;
 }
 }
 
@@ -320,6 +320,12 @@ nav .search-icon{
     display: block;
   }
 }
+@media (max-width: 400px){
+  nav .logo{
+    font-size: 24px;
+  }
+}
+
 .content{
   position: absolute;
   top: 50%;
@@ -539,6 +545,70 @@ nav .logo.space{
         border: 1px solid #0796FF;
       }
       
+      #wrapper2 {
+        margin-top: 3vh;
+        width: 78%;
+        max-width: fit-content;
+        position: relative;
+        left: 14%;
+      }
+      
+      #carousel2 {
+        overflow: auto;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+      }
+      
+      #carousel2::-webkit-scrollbar {
+        height: 0;
+      }
+      
+      #prev2,
+      #next2 {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background: white;
+        border: none;
+        padding: 8px;
+        border-radius: 50%;
+        outline: 0;
+        cursor: pointer;
+        position: absolute;
+      }
+      
+      #prev2 {
+        top: 50%;
+        left: 0;
+        transform: translate(50%, -50%);
+        display: none;
+      }
+      
+      #next2 {
+        top: 50%;
+        right: 0;
+        transform: translate(-50%, -50%);
+      }
+      
+      #content2 {
+        display: grid;
+        grid-gap: 1.6vh;
+        grid-auto-flow: column;
+        margin: auto;
+        box-sizing: border-box;
+      }
+      
+      .item2 {
+        width: 24vh;
+        height: 24vh;
+        background: #fff;
+        border: 1px solid rgb(216, 216, 216);
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      }
+
+      .item2:hover{
+        border: 1px solid #0796FF;
+      }
       /* Here ends the Carousel CSS */
 
       /* Here starts the CSS for the services */
@@ -956,8 +1026,7 @@ nav .logo.space{
     .article-description{
       font-size: 1rem;
       text-align: center;
-      width: 500px;
-      word-wrap: break-word;
+      width: 90%;
       margin: 20px;
     }
     .articles-wrapping{
@@ -978,6 +1047,45 @@ nav .logo.space{
       box-shadow: 0 6px 4px 0 rgba(0,0,0,0.2);
       transition: 0.3s;
       border-radius: 5px; /* 5px rounded corners */
+    }
+    .button-shop{
+      text-align: center;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 15px;
+    }
+
+    @media (max-width: 550px){
+      .border-test{
+        width: 400px;
+        margin: 5px;
+      }
+      .article-text{
+        text-align: center;
+        font-size: 1em;
+      }
+    }
+
+    @media (max-width: 465px){
+      .border-test{
+        width: 300px;
+        margin: 5px;
+      }
+      .article-text{
+        text-align: center;
+        font-size: 0.8em;
+      }
+      .article-image{
+        width: 90%;
+      }
+      .article-title2{
+        font-size: 1.4rem;
+      }
+      .article-price{
+        font-size: 1.4rem;
+      }
+
     }
 
     /* About us page */
